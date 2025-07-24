@@ -13,7 +13,7 @@ Update manifest with public key (optional)
 
 Helps keep track of the extension ID thats going to be loaded  
 ```powershell
-cd chrome-cookie-stealer-extension
+cd cookie-stealer-extension
 
 #create a public key for the extension
 openssl genrsa -out extension.key 2048
